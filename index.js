@@ -12,11 +12,11 @@ function getRandomInt(min, max) {
 }
 console.log(sum);
 if (sum < 21) {
-  console.log("would you like to take oone more card ?");
+  message = "would you like to take oone more card ?";
 } else if (sum === 21) {
-  console.log("you are a winner");
+  message = "you are a winner";
   hasBlackJack = true;
 } else {
-  console.log("sorry you have lost");
+  message = "sorry you have lost";
   isAlive = false;
 }
