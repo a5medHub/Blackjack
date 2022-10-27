@@ -3,6 +3,7 @@ let secondCard = getRandomInt(2, 23);
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
+let message = "";
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
