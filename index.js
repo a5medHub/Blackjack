@@ -20,3 +20,5 @@ if (sum < 21) {
   message = "sorry you have lost";
   isAlive = false;
 }
+
+console.log(message);
