@@ -10,15 +10,16 @@ function getRandomInt(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
 }
-console.log(sum);
-if (sum < 21) {
-  message = "would you like to take oone more card ?";
-} else if (sum === 21) {
-  message = "you are a winner";
-  hasBlackJack = true;
-} else {
-  message = "sorry you have lost";
-  isAlive = false;
-}
+function startGame() {
+  if (sum < 21) {
+    message = "would you like to take oone more card ?";
+  } else if (sum === 21) {
+    message = "you are a winner";
+    hasBlackJack = true;
+  } else {
+    message = "sorry you have lost";
+    isAlive = false;
+  }
 
-console.log(message);
+  console.log(message);
+}
