@@ -14,7 +14,7 @@ function startGame() {
   if (sum < 21) {
     message = "would you like to take oone more card ?";
   } else if (sum === 21) {
-    messageEl = "you are a winner";
+    message = "you are a winner";
     hasBlackJack = true;
   } else {
     messageEl = "sorry you have lost";
