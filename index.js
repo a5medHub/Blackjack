@@ -21,5 +21,5 @@ function startGame() {
     isAlive = false;
   }
 
-  console.log(message);
+  console.log(messageEl);
 }
