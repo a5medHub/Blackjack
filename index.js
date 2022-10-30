@@ -17,7 +17,7 @@ function startGame() {
     message = "you are a winner";
     hasBlackJack = true;
   } else {
-    messageEl = "sorry you have lost";
+    message = "sorry you have lost";
     isAlive = false;
   }
 
