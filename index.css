@@ -17,6 +17,7 @@ h1 {
 }
 
 .btn-start-game {
+  cursor: pointer;
   color: #016f32;
   width: 150px;
   background-color: goldenrod;
