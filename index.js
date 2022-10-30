@@ -1,4 +1,4 @@
-let firstCard = getRandomInt(2, 23);
+let firstCard = 5; //getRandomInt(2, 23);
 let secondCard = getRandomInt(2, 23);
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
