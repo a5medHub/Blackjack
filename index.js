@@ -1,5 +1,5 @@
 let firstCard = 5; //getRandomInt(2, 23);
-let secondCard = getRandomInt(2, 23);
+let secondCard = 10; //getRandomInt(2, 23);
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
