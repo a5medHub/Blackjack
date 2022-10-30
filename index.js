@@ -12,7 +12,7 @@ function getRandomInt(min, max) {
 }
 function startGame() {
   if (sum < 21) {
-    message = "would you like to take oone more card ?";
+    messageEl = "would you like to take oone more card ?";
   } else if (sum === 21) {
     message = "you are a winner";
     hasBlackJack = true;
