@@ -4,7 +4,7 @@ let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
 let message = "";
-
+let messageEl = document.getElementById("message-el");
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
