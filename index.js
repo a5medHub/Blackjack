@@ -23,3 +23,5 @@ function startGame() {
   messageEl.textContent = message;
   //console.log(messageEl);
 }
+startGame();
+console.log(startGame());
