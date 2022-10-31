@@ -12,7 +12,7 @@ let messageEl = document.getElementById("message-el");
 }*/
 function startGame() {
   if (sum < 21) {
-    message = "would you like to take oone more card ?";
+    message = "would you like to take one more card ?";
   } else if (sum === 21) {
     message = "you are a winner";
     hasBlackJack = true;
