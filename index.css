@@ -12,11 +12,7 @@ h1 {
   color: goldenrod;
 }
 
-#message-el {
-  font-style: italic;
-}
-
-#btn-start-game {
+.btn-start-game {
   cursor: pointer;
   color: #016f32;
   width: 150px;
@@ -24,4 +20,8 @@ h1 {
   border-radius: 5px;
   border: 0px;
   font-weight: bold;
+}
+
+#message-el {
+  font-style: italic;
 }
