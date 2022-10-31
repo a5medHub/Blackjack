@@ -16,7 +16,7 @@ h1 {
   font-style: italic;
 }
 
-.btn-start-game {
+#btn-start-game {
   cursor: pointer;
   color: #016f32;
   width: 150px;
