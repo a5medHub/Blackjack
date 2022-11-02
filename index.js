@@ -22,4 +22,4 @@ function startGame() {
   }
   messageEl.textContent = message;
 }
-console.log(message);
+console.log(messageEl);
