@@ -6,6 +6,7 @@ body {
   text-align: center;
   font-weight: bold;
   color: lightgray;
+  max-width: fit-content;
 }
 
 h1 {
