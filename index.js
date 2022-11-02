@@ -1,4 +1,4 @@
-let firstCard = 5; //getRandomInt(2, 23);
+let firstCard = 15; //getRandomInt(2, 23);
 let secondCard = 10; //getRandomInt(2, 23);
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
@@ -21,6 +21,6 @@ function startGame() {
     isAlive = false;
   }
   messageEl.textContent = message;
-  console.log(messageEl);
+  console.log(message);
 }
 startGame();
