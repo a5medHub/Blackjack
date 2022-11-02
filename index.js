@@ -21,6 +21,6 @@ function startGame() {
     isAlive = false;
   }
   messageEl.textContent = message;
-  console.log(message);
 }
 startGame();
+console.log(message);
