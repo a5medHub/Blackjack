@@ -11,9 +11,9 @@ let messageEl = document.getElementById("message-el");
   return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
 }*/
 function startGame() {
-  if (sum < 21) {
+  if (Number(sum) < 21) {
     message = "would you like to take one more card ?";
-  } else if (sum === 21) {
+  } else if (Number(sum) === 21) {
     message = "you are a winner";
     hasBlackJack = true;
   } else {
