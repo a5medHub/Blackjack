@@ -20,8 +20,7 @@ function startGame() {
     message = "sorry you have lost";
     isAlive = false;
   }
-  messageEl.innerHTML = message;
+  messageEl.textContent = message;
   console.log(messageEl);
 }
 startGame();
-console.log(startGame());
