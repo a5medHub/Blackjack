@@ -32,4 +32,5 @@ console.log(messageEl);
 function newCard() {
   console.log("Drawing a new card from the deck!");
   let newCardNumber = 7;
+  sum += newCardNumber;
 }
