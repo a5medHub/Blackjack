@@ -29,3 +29,4 @@ function startGame() {
   messageEl.textContent = message;
 }
 console.log(messageEl);
+function newCard() {}
