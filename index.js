@@ -15,8 +15,7 @@ let cardsEl = document.querySelector("#cards-el"); // try query selector in card
 }*/
 
 function startGame() {
-  cardsEl.innerText = "" + cardsEl;
-  sumEl.innerText = "Sum: " + sum;
+  cardsEl.textContent = sumEl.innerText = "Sum: " + sum;
   if (Number(sum) < 21) {
     message = "would you like to take one more card ?";
   } else if (Number(sum) === 21) {
