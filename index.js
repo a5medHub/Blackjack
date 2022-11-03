@@ -6,6 +6,7 @@ let isAlive = true;
 let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
+let cardsEl = document.querySelector("#cards-el"); // try query selector in cards ID
 
 /*function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -14,6 +15,7 @@ let sumEl = document.getElementById("sum-el");
 }*/
 
 function startGame() {
+  cardsEl.innerText = "" + cardsEl;
   sumEl.innerText = "Sum: " + sum;
   if (Number(sum) < 21) {
     message = "would you like to take one more card ?";
