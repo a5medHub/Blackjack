@@ -14,6 +14,7 @@ let sumEl = document.getElementById("sum-el");
 }*/
 
 function startGame() {
+  sumEl.innerText = "Sum: " + sum;
   if (Number(sum) < 21) {
     message = "would you like to take one more card ?";
   } else if (Number(sum) === 21) {
