@@ -13,7 +13,9 @@ let cardsEl = document.querySelector("#cards-el"); // try query selector in card
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
 }*/
-function startGame() {}
+function startGame() {
+  renderGame();
+}
 function renderGame() {
   cardsEl.textContent = "Cards: " + firstCard + " " + secondCard;
   sumEl.textContent = "Sum: " + sum;
