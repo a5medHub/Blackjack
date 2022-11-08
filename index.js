@@ -18,7 +18,7 @@ function startGame() {
   renderGame();
 }
 function renderGame() {
-  cardsEl.textContent = "Cards: " + cards;
+  cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
   sumEl.textContent = "Sum: " + sum;
   if (Number(sum) < 21) {
     message = "would you like to take one more card ?";
