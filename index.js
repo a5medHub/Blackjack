@@ -1,5 +1,10 @@
-let firstCard = 15; //getRandomInt(2, 23);
-let secondCard = 10; //getRandomInt(2, 23);
+/*function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+}*/
+let firstCard = 10; //getRandomInt(2, 23);
+let secondCard = 4; //getRandomInt(2, 23);
 let cards = [firstCard, secondCard];
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
@@ -7,35 +12,37 @@ let isAlive = true;
 let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
-let cardsEl = document.querySelector("#cards-el"); // try query selector in cards ID
+let cardsEl = document.getElementById("cards-el"); // try query selector in cards ID
 
-/*function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
-}*/
 function startGame() {
   renderGame();
 }
+
 function renderGame() {
-  cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
+  cardsEl.textContent = "Cards: ";
+  // Create a for loop that renders out all the cards instead of just two
+  for (let i = 0; i < cards.length; i++) {
+    cardsEl.textContent += cards[i] + " ";
+  }
+
   sumEl.textContent = "Sum: " + sum;
-  if (Number(sum) < 21) {
-    message = "would you like to take one more card ?";
-  } else if (Number(sum) === 21) {
-    message = "you are a winner";
+  if (sum <= 20) {
+    message = "Do you want to draw a new card?";
+  } else if (sum === 21) {
+    message = "You've got Blackjack!";
     hasBlackJack = true;
   } else {
-    message = "sorry you have lost";
+    message = "You're out of the game!";
     isAlive = false;
   }
   messageEl.textContent = message;
 }
-console.log(messageEl);
+
 function newCard() {
-  console.log("Drawing a new card from the deck!");
-  let newCardNumber = 7;
-  sum += newCardNumber;
-  cards.push(newCardNumber);
+  let card = 6;
+  sum += card;
+  // Push the card to the cards array
+  cards.push(card);
+  console.log(cards);
   renderGame();
 }
