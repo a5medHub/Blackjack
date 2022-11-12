@@ -20,8 +20,9 @@ function getRandomCard() {
 
 function startGame() {
   let firstCard = getRandomCard();
+  cards.push(firstCard);
   let secondCard = getRandomCard();
-  cards = [firstCard, secondCard];
+  cards.push(secondCard);
   renderGame();
 }
 
