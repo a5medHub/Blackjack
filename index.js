@@ -15,6 +15,7 @@ let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el"); // try query selector in cards ID
 
 function getRandomCard() {
+  let randomNumber = Math.floor(Math.random() * 13) + 1;
   return 5;
 }
 
