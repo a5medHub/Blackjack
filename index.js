@@ -20,6 +20,8 @@ function getRandomCard() {
     return 11;
   } else if (randomNumber > 10) {
     return 10;
+  } else {
+    return randomNumber;
   }
 }
 
