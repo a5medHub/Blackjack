@@ -19,10 +19,11 @@ function getRandomCard() {
 }
 
 function startGame() {
+  isAlive = true;
   let firstCard = getRandomCard();
-  cards.push(firstCard);
   let secondCard = getRandomCard();
-  cards.push(secondCard);
+  cards = [firstCard, secondCard];
+  sum = firstNumber + secondNumber;
   renderGame();
 }
 
