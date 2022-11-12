@@ -21,6 +21,7 @@ function getRandomCard() {
 function startGame() {
   let firstCard = getRandomCard();
   let secondCard = getRandomCard();
+  cards = [firstCard, secondCard];
   renderGame();
 }
 
