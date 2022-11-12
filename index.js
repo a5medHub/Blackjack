@@ -3,8 +3,8 @@
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
 }*/
-let firstCard = 10; //getRandomInt(2, 23);
-let secondCard = 4; //getRandomInt(2, 23);
+let firstCard = getRandomCard(); //getRandomInt(2, 23);
+let secondCard = getRandomCard(); //getRandomInt(2, 23);
 let cards = [firstCard, secondCard];
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
