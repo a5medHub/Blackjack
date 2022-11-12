@@ -16,7 +16,7 @@ let cardsEl = document.getElementById("cards-el"); // try query selector in card
 
 function getRandomCard() {
   let randomNumber = Math.floor(Math.random() * 13) + 1;
-  return 5;
+  return randomNumber;
 }
 
 function startGame() {
