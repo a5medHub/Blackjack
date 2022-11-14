@@ -1,22 +1,26 @@
-let player = { name: "ahmad", chips: 150 };
+let player = {
+  name: "Ahmad",
+  chips: 200,
+};
+
 let cards = [];
-let sum = firstCard + secondCard;
+let sum = 0;
 let hasBlackJack = false;
-let isAlive = true;
+let isAlive = false;
 let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
-let cardsEl = document.getElementById("cards-el"); // try query selector in cards ID
+let cardsEl = document.getElementById("cards-el");
 let playerEl = document.getElementById("player-el");
 
-playerEl.innerHTML = player.name + ": $" + player.chips; //render player data
+playerEl.textContent = player.name + ": $" + player.chips;
 
 function getRandomCard() {
   let randomNumber = Math.floor(Math.random() * 13) + 1;
-  if (randomNumber === 1) {
-    return 11;
-  } else if (randomNumber > 10) {
+  if (randomNumber > 10) {
     return 10;
+  } else if (randomNumber === 1) {
+    return 11;
   } else {
     return randomNumber;
   }
@@ -24,16 +28,15 @@ function getRandomCard() {
 
 function startGame() {
   isAlive = true;
-  let firstNumber = getRandomCard();
-  let secondNumber = getRandomCard();
-  cards = [firstNumber, secondNumber];
-  sum = firstNumber + secondNumber;
+  let firstCard = getRandomCard();
+  let secondCard = getRandomCard();
+  cards = [firstCard, secondCard];
+  sum = firstCard + secondCard;
   renderGame();
 }
 
 function renderGame() {
   cardsEl.textContent = "Cards: ";
-  // Create a for loop that renders out all the cards instead of just two
   for (let i = 0; i < cards.length; i++) {
     cardsEl.textContent += cards[i] + " ";
   }
@@ -55,9 +58,7 @@ function newCard() {
   if (isAlive === true && hasBlackJack === false) {
     let card = getRandomCard();
     sum += card;
-    // Push the card to the cards array
     cards.push(card);
-    console.log(cards);
     renderGame();
   }
 }
