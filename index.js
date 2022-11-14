@@ -1,3 +1,4 @@
+let player = {};
 let cards = [];
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
