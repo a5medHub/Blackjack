@@ -32,6 +32,8 @@ function startGame() {
   let secondCard = getRandomCard();
   cards = [firstCard, secondCard];
   sum = firstCard + secondCard;
+  player.chips = 200;
+  playerEl.innerHTML = player.name + ": $" + player.chips;
   renderGame();
 }
 
@@ -56,6 +58,8 @@ function renderGame() {
 
 function newCard() {
   if (isAlive === true && hasBlackJack === false) {
+    player.chips -= 50;
+    playerEl.innerHTML = player.name + ": $" + player.chips;
     let card = getRandomCard();
     sum += card;
     cards.push(card);
