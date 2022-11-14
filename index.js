@@ -1,4 +1,4 @@
-let player = {};
+let player = { name: "ahmad", chips: 150 };
 let cards = [];
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
