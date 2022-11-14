@@ -9,6 +9,8 @@ let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el"); // try query selector in cards ID
 let playerEl = document.getElementById("player-el");
 
+playerEl.innerHTML = "name: " + player.name + ", chips: " + player.chips; //render player data
+
 function getRandomCard() {
   let randomNumber = Math.floor(Math.random() * 13) + 1;
   if (randomNumber === 1) {
