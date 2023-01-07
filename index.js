@@ -9,7 +9,7 @@ let hasBlackJack = false;
 let isAlive = false;
 let message = "";
 const messageEl = document.getElementById("message-el");
-let sumEl = document.getElementById("sum-el");
+const sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 let playerEl = document.getElementById("player-el");
 
