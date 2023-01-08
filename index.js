@@ -11,7 +11,7 @@ let message = "";
 const messageEl = document.getElementById("message-el");
 const sumEl = document.getElementById("sum-el");
 const cardsEl = document.getElementById("cards-el");
-let playerEl = document.getElementById("player-el");
+const playerEl = document.getElementById("player-el");
 
 playerEl.textContent = player.name + ": $" + player.chips;
 
